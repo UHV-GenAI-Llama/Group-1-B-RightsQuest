@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset('assets/images/LoginAvtar.png',width: 200,),
-              Text('Login to Start your Wonderful Journey to become a Rights Questee',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),),
+              Text('Login to Start your Journey to become a Rights Questee',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,),),
               SizedBox(height: 8,),
               TextField(
                 controller: _emailController,
@@ -64,10 +64,10 @@ class _LoginPageState extends State<LoginPage> {
                   print('Email: $email');
                   print('Password: $password');
                   // Perform login action here
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => const QuizPage()),
-                  );
+                  // Navigator.pushReplacement(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) =>  QuizPage()),
+                  // );
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
